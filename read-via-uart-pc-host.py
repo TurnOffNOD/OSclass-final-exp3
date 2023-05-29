@@ -28,7 +28,6 @@ print((wakeup_ack.hex(' ')).upper())
 uart_port.write(DET_CARD_FRAME)
 det_card_frame_ack = uart_port.read(6)
 print((det_card_frame_ack.hex(" ")).upper())
-print((det_card_frame_ack.hex(" ")).upper())
 
 while uart_port.in_waiting == 0:
     pass
